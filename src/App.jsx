@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect , useState } from "react";
 import FrontPage from "./components/frontPage";
 import Dashboard from "./components/Dashboard";
 import MyApps from "./components/MyApps";
@@ -13,11 +13,11 @@ export default function App() {
     : "login";
   };
 
-  const [opage , setPage] = useState(getPageFromHash);
+  const [page , setPage] = useState(getPageFromHash);
 
   useEffect(() => {
     const handleHashChange = () => setPage(getPageFromHash());
-    window.addEventListenier("hashchange", handleHashChange);
+    window.addEventListener("hashchange", handleHashChange);
 
     return () => window.removeEventListener("hashchange", handleHashChange);
 

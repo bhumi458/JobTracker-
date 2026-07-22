@@ -8,7 +8,7 @@ import { FaList } from "react-icons/fa";
 import { IoIosSearch } from "react-icons/io";
 import { TbMathGreater } from "react-icons/tb";
 
-const Browse = () => {
+const Browse = (onNavigate) => {
 
   const companies = [
     {

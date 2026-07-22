@@ -13,7 +13,7 @@ import { RxCross1 } from "react-icons/rx";
 import { GiPaperBagOpen } from "react-icons/gi";
 import { FaArrowAltCircleUp } from "react-icons/fa";
 
-const Dashboard = () => {
+const Dashboard = (onNavigate) => {
 
     const stats = [
        {   

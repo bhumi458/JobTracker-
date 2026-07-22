@@ -16,7 +16,7 @@ import { RxCross1 } from "react-icons/rx";
 import { IoIosSearch } from "react-icons/io";
 import { FaMagnifyingGlass } from "react-icons/fa6";
 
-const MyApps = () => {
+const MyApps = (onNavigate) => {
 
   const filters = [
     {
