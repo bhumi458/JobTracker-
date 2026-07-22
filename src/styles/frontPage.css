@@ -1,0 +1,158 @@
+@import "tailwindcss";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    min-height: 100vh;
+}
+
+.left-panel{
+    width: 40%;
+    background-color: black;
+    color: white;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-panel{
+    width: 60%;
+    background-color: white;
+    display: flex;
+     flex-direction: column;
+      justify-content: center;
+     align-items: center;
+     padding-right: 50px;
+}
+
+.header{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 80px;
+}
+
+.hero-title{
+    font-size: 52px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.description{
+    margin-top: 25px;
+    color: #d1d5db;
+    line-height: 1.8;
+}
+
+.feature-list{
+    margin-top: 40px;
+    list-style: none;
+}
+
+.feature-item{
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.footer{
+    margin-top: auto;
+    color: #9ca3af;
+}
+
+.orange-text{
+    color: #ff7a18;
+}
+
+.welcome-title{
+     font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    
+}
+
+.welcome-subtitle{
+    color: gray;
+    margin-bottom: 30px;
+     
+}
+
+.button-group{
+    display: flex;
+    width: 350px;
+    background: #ece6df;
+    border-radius : 20px;
+    padding : 5px;
+    margin-bottom: 30px;
+}
+
+.tab-button{
+    flex: 1;
+    border: none;
+    background: transparent;
+    padding: 12px;
+    border-radius: 20px;
+    cursor : pointer;
+    font-size: 15px;
+}
+
+.tab-button:first-child{
+    background: white;
+    font-weight: bold;
+}
+
+.login-form{
+    width: 350px;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+
+.form-group label{
+    margin-bottom: 6px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.form-group input{
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius : 15px;
+    outline: none;
+}
+
+.forgot-password{
+    text-align: right;
+    color: grey;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.login-btn{
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: black;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.signup-text{
+    margin-top: 20px;
+}
+
+.signup-btn{
+    border: none;
+    background:none;
+    color: orange;
+    font-weight: bold;
+    cursor: pointer;
+}
