@@ -1,7 +1,7 @@
 import React from 'react';
 // import FrontPage from "./components/frontPage";
 // import Dashboard from "./components/Dashboard";
-import MyApps from "./components/MyApps";
+// import MyApps from "./components/MyApps";
 import Browse from "./components/Browse";
  
 
@@ -11,8 +11,8 @@ export default function App() {
       <div>
         {/* <FrontPage /> */}
         {/* <Dashboard /> */}
-        <MyApps />
-        {/* <Browse/> */}
+        {/* <MyApps /> */}
+        <Browse/>
       </div>     
   );
 }
