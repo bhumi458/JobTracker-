@@ -76,21 +76,23 @@ const MyApps = () => {
             </span>
 
             JobTracker
-          </h2>
+          </h2>       
 
           <div className="nav-links">
 
-            <h3>
+            <h3 onClick={() => onNavigate("dashboard")}>
               <MdOutlineDashboard />
               Dashboard
             </h3>
 
-            <h3>
+            <h3 onClick={() => onNavigate("browse")}>
               <BsBrowserSafari />
               Browse
-            </h3>
+            </h3>      
 
-            <h3 className="active">
+
+
+            <h3 className="active" onClick={() => onNavigate("apps")}>
               <FaList />
               My Apps
             </h3>

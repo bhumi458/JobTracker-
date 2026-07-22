@@ -78,11 +78,12 @@ const Dashboard = () => {
                 </h2>
 
                <div className="nav-links">
-                  <h3 className="active">
+                  <h3 className="active" onClick={() => onNavigate("dashbaord")}>
                     <MdOutlineDashboard />
                     Dashboard</h3>
-                  <h3> <BsBrowserSafari />Browse</h3>
-                  <h3> <FaList />My Apps</h3> 
+
+                  <h3 onClick={() => onNavigate("browse")}> <BsBrowserSafari />Browse</h3>
+                  <h3 onClick={() => onNavigate("apps")}> <FaList />My Apps</h3> 
 
                </div>
             </div>
@@ -98,7 +99,7 @@ const Dashboard = () => {
 
               </div>
 
-              <button className="logout-btn">
+              <button className="logout-btn" onClick={() => onNavigate("login")}>
                      <MdLogout />
               </button>
            </div>

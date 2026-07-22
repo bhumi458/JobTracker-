@@ -140,17 +140,17 @@ const Browse = () => {
 
           <div className="nav-links">
 
-            <h3>
+            <h3 onClick={() => onNavigate("dashbaord")}>
               <MdOutlineDashboard />
               Dashboard
             </h3>
 
-            <h3 className="active">
+            <h3 className="active" onClick={() => onNavigate("browse")}>
               <BsBrowserSafari />
               Browse
             </h3>
 
-            <h3>
+            <h3 onClick={() => onNavigate("apps")}>
               <FaList />
               My Apps
             </h3>
@@ -171,7 +171,7 @@ const Browse = () => {
 
           </div>
 
-          <button className="logout-btn">
+          <button className="logout-btn" onClick={() => onNavigate("login")}>
             <MdLogout />
           </button>
 

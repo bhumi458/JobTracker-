@@ -1,7 +1,7 @@
 import React from 'react'
 import "../styles/frontPage.css";
 
-const FrontPage = () => {
+const FrontPage = (onNavigate) => {
     //We will use map() to display every feature
 
     const features = [
@@ -67,7 +67,13 @@ const FrontPage = () => {
 
           {/*login form */}
 
-          <form className="login-form">
+          <form className="login-form" 
+            onSubmit= {(event) =>{
+              event.preventDefault();
+              onNavigate("dashboard");
+            }}>
+
+
             <div className="form-group">
               {/*connect label with inout*/}
               <label htmlFor="email">Email</label>
@@ -102,7 +108,7 @@ const FrontPage = () => {
           </form>
 
 
-          <p className="signup-text">Don't have an account? <button className="signup-btn">Sign Up</button></p>
+          <p className="signup-text">Don't have an account? <button type="button" className="signup-btn" onClick={() => onNavigate("dashboard")}>Sign Up</button></p>
           </div>
         </div>
        </section>
