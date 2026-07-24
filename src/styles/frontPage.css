@@ -28,7 +28,6 @@ body{
     background:#000;
     color:white;
     padding:60px;
-
     display:flex;
     flex-direction:column;
 }
