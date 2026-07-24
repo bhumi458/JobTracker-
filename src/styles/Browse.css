@@ -14,7 +14,8 @@ body{
  
 
 .browse{
-    max-width:1200px;
+    width: 100%;
+    max-width:1400px;
     margin:auto;
     padding:110px 30px 40px;
 }
@@ -234,8 +235,7 @@ body{
 
 .company-section{
     display:grid;
-
-    grid-template-columns:repeat(4,1fr);
+    grid-template-columns:repeat(4,minmax(240px , 1fr));
 
     gap:22px;
 }
@@ -250,7 +250,7 @@ body{
 
     border-radius:22px;
 
-    padding:18px;
+    padding:20px;
 
     display:flex;
     flex-direction:column;
@@ -270,10 +270,10 @@ body{
 
 .company-logo{
 
-    width:44px;
-    height:44px;
+    width:38px;
+    height:38px;
 
-    border-radius:14px;
+    border-radius:12px;
 
     background:#e8ddcf;
 
@@ -282,7 +282,7 @@ body{
     align-items:center;
 
     font-weight:bold;
-    font-size:20px;
+    font-size:18px;
 
     color:#5b5144;
 
@@ -293,7 +293,8 @@ body{
 
 .company-card h3{
 
-    font-size:26px;
+    font-size:18px;
+    font-weight: 700;
 
     color:#222;
 
@@ -306,7 +307,7 @@ body{
 
     color:#1f8a50;
 
-    font-size:17px;
+    font-size:15px; 
 
     font-weight:600;
 
@@ -328,11 +329,11 @@ body{
 
 .tag{
 
-    padding:5px 12px;
+    padding:4px 10px;
 
     border-radius:999px;
 
-    font-size:13px;
+    font-size:12px;
 
     font-weight:600;
 }
@@ -409,7 +410,7 @@ body{
 
     color:#8c7a68;
 
-    font-size:15px;
+    font-size:14px;
 
     font-weight:600;
 

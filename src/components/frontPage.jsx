@@ -1,118 +1,131 @@
-import React from 'react'
+import React from "react";
 import "../styles/frontPage.css";
 
-const FrontPage = (onNavigate) => {
-    //We will use map() to display every feature
+const FrontPage = ({ onNavigate }) => {
+  const features = [
+    "Applied to 12 Companies",
+    "3 Interviews this week",
+    "1 Offer received",
+  ];
 
-    const features = [
-      "Applied to 12 Companies",
-      "3 Interviews this week ",
-      "1 Offer received",
-    ] ;
+  const buttons = ["Log In", "Sign Up"];
 
-   const buttons = ["Log In" , "Sign Up"];
+  return (
+    <section className="front-page">
+      <div className="container">
 
-   //JSX starts from here 
-   return (
-       /*main section of the page*/
+        {/* Left Side */}
+        <div className="left-panel">
 
-       <section className="front-page">
-       {/*left panel*/}
+          <h2 className="header">JobTracker</h2>
 
-        <div className="container">
+          <h1 className="hero-title">
+            Your placement journey, tracked{" "}
+            <span className="orange-text">beautifully</span>
+          </h1>
 
-          <div className="left-panel">
-          <header>
-            <h2 className="header">JobTracker</h2>
-          </header>
+          <p className="description">
+            From first application to final offer — keep every company,
+            every round, every note in one place.
+          </p>
 
-            <h1 className="hero-title">Your placement journey , tracked <span className="orange-text">beautifully</span></h1>
+          <ul className="feature-list">
+            {features.map((feature, index) => (
+              <li key={index} className="feature-item">
+                {feature}
+              </li>
+            ))}
+          </ul>
 
-            <p className="description">From first application to fina offer - keep every company , 
-               every round , every note in one place.
+          <p className="footer">
+            Made for campus placement grind
+          </p>
+
+        </div>
+
+        {/* Right Side */}
+        <div className="right-panel">
+
+          <div className="form-container">
+
+            <h1 className="welcome-title">
+              Welcome Back.
+            </h1>
+
+            <p className="welcome-subtitle">
+              Log in to your tracker.
             </p>
 
-            {/*features list*/}
-            <ul className="feature-list">
-              {features.map((feature , index) => (
-                //key help react identify every list item
-                <li key = {index} className="feature-item">{feature}</li>
+            <div className="button-group">
+              {buttons.map((button, index) => (
+                <button
+                  key={index}
+                  className={`tab-button ${index === 0 ? "active-tab" : ""}`}
+                >
+                  {button}
+                </button>
               ))}
-            </ul>
-          
+            </div>
 
-          <footer className="footer">
-            <p>Made for campus placement grind</p>
-          </footer>
-           </div>
-        
+            <form
+              className="login-form"
+              onSubmit={(e) => {
+                e.preventDefault();
+                onNavigate("dashboard");
+              }}
+            >
 
+              <div className="form-group">
+                <label>Email</label>
 
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                />
+              </div>
 
-         
-          {/*right panel*/}
-           <div className="right-panel">
-          <h1 className="welcome-title">Welcome Back.</h1>
-          <p className="welcome-subtitle">Log in to your tracker.</p>
+              <div className="form-group">
+                <label>Password</label>
 
-          <div className="button-group">
-            {buttons.map((button , index) => { 
-              return(
-              <button key={index} className="tab-button">
-                {button}
+                <input
+                  type="password"
+                  placeholder="Enter your password"
+                />
+              </div>
+
+              <p className="forgot-password">
+                Forgot Password?
+              </p>
+
+              <button
+                type="submit"
+                className="login-btn"
+              >
+                Log In
               </button>
-              );
-            })}
+
+            </form>
+
+            <p className="signup-text">
+              Don't have an account?
+
+              <button
+                className="signup-btn"
+                type="button"
+                onClick={() => onNavigate("dashboard")}
+              >
+                Sign Up
+              </button>
+
+            </p>
+
           </div>
 
-          {/*login form */}
-
-          <form className="login-form" 
-            onSubmit= {(event) =>{
-              event.preventDefault();
-              onNavigate("dashboard");
-            }}>
-
-
-            <div className="form-group">
-              {/*connect label with inout*/}
-              <label htmlFor="email">Email</label>
-              
-              {/*email input box*/}
-              <input 
-               type="email"
-               id="email"
-               name="email"
-               placeholder="Enter your email"/>
-            </div>
-
-
-             <div className="form-group">
-              {/*connect label with inout*/}
-              <label htmlFor="password">Password</label>
-              
-              {/*password input box*/}
-              <input 
-               type="password"
-               id="password"
-               name="password"
-               placeholder="Enter your password"/>
-            </div>
-
-
-             <p className="forgot-password">Forgot Password?</p>
-
-             <button type="submit" className="login-btn">
-              Log In
-             </button>
-          </form>
-
-
-          <p className="signup-text">Don't have an account? <button type="button" className="signup-btn" onClick={() => onNavigate("dashboard")}>Sign Up</button></p>
-          </div>
         </div>
-       </section>
-   );
+
+      </div>
+    </section>
+  );
 };
 
-export default FrontPage
+export default FrontPage;
