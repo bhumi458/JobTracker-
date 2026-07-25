@@ -37,7 +37,7 @@ export default function App() {
   }
 
   if(page === "signUp"){
-    return <FrontPage onNavigate={navigate} />
+    return <FrontPage2 onNavigate={navigate} />
   }
 
 
