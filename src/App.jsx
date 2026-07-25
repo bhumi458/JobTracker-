@@ -48,7 +48,7 @@ export default function App() {
   if(page === "browse") {
     return <Browse onNavigate={navigate} />;
   }
-
+         
     if(page === "apps"){
     return <MyApps onNavigate={navigate} />;
   }

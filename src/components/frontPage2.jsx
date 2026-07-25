@@ -47,7 +47,7 @@ const FrontPage2 = ({onNavigate}) => {
           {/*right panel*/}
            <div className="right-panel">
             <div className="signup-box">
-
+      
           <h1 className="welcome-title">Create account</h1>
 
           <p className="welcome-subtitle">
