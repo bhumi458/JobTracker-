@@ -39,7 +39,7 @@
 .logo-btn{
     width:38px;
     height:38px;
-
+    
     border-radius:50%;
 
     background:#201b17;
@@ -48,9 +48,12 @@
     display:flex;
     justify-content:center;
     align-items:center;
+    
 }
-
+ 
 .header{
+    display: flex;
+    align-items: center;
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 80px;
@@ -90,8 +93,28 @@
 .footer{
     margin-top: auto;
     color: #9ca3af;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
 }
 
+.fotter p{
+    margin: 0;
+}
+
+.footer-logo{
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: #201b17;
+    color: white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+ 
 .orange-text{
     color: #ff7a18;
 }
@@ -158,19 +181,41 @@
     outline: none;
 }
 
-.terms label S1 S2{
-    color: blue;
+.terms{
+     display: flex;
+     align-items: center;
+     gap: 10px;
+     margin-bottom: 18px;
+}
 
+.terms input{
+    width: 18px;
+    height: 18px;
+}
+
+.terms label{
+  font-size: 14px;
+  color: #4b5563;
+}
+
+.terms label .S1 ,
+.terms label .S2{
+    color: blue;
 }
 
 .create-btn{
    background: black;
    color: white;
    font-size: 20px;
-   padding: 20px;
+   padding: 16px 24px;
    border-radius: 30px;
    margin-top: 10px;
+   width: 100%;
+   max-width: 100%;
+   cursor: pointer;
+   display: inline-flex;
    justify-content: center;
+   align-items: center;
 
 }
 

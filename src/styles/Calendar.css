@@ -1,0 +1,310 @@
+@import "tailwindcss";
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#f5f2ea;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+
+.Calender{
+    max-width:1200px;
+    margin:auto;
+    padding:110px 30px 40px;
+}
+
+.navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:70px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 60px;
+
+    background:#faf7f2;
+    border-bottom:1px solid #ece4d8;
+
+    z-index:1000;
+}
+
+.nav-left{
+    display:flex;
+    align-items:center;
+    gap:45px;
+}
+
+.nav-right{
+    display:flex;
+    align-items:center;
+    gap:35px;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    font-size:30px;
+    font-weight:700;
+}
+
+.logo-btn{
+    width:38px;
+    height:38px;
+
+    border-radius:50%;
+
+    background:#201b17;
+    color:white;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.nav-links{
+    display:flex;
+    gap:20px;
+}
+
+.nav-links h3{
+    display:flex;
+    align-items:center;
+    gap:8px;
+
+    color:#777;
+    font-size:16px;
+
+    cursor:pointer;
+}
+
+.nav-links h3:hover{
+    color:black;
+}
+
+.active{
+    background:#201b17;
+    color:white !important;
+
+    padding:10px 20px;
+    border-radius:999px;
+}
+
+.profile{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.avatar{
+    width:36px;
+    height:36px;
+
+    border-radius:50%;
+
+    background:black;
+    color:white;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-weight:bold;
+}
+
+.logout-btn{
+    border:none;
+    background:none;
+
+    font-size:22px;
+
+    color:#777;
+
+    cursor:pointer;
+}
+
+.logout-btn:hover{
+    color: black;
+}
+
+.calendar-page{
+    max-width: 1300px;
+    margin: auto;
+    padding: 110px 30px 40px;
+}
+
+.calendar-header{
+   margin-bottom: 35px;
+}
+
+.calendar-small-title{
+    color: #9b8570;
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.calendar-header h1{
+    font-size: 52px;
+    margin-bottom: 10px;
+}
+
+.calendar-subtitle{
+    font-size: 18px;
+    color: #777;
+    max-width: 650px;
+    line-height: 1.6;
+}
+
+.calendar-container{
+  display: flex;
+  gap: 25px;
+  align-items: flex-start;
+}
+
+.calendar-left{
+    flex: 3;
+    background: white;
+    border-radius: 20px;
+    border: 1px solid #ece4d8;
+    padding: 20px;
+}
+
+.calendar-right{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info-card{
+    background: white;
+    border: 1px solid #ece4d8;
+    border-radius: 18px;
+    padding: 20px;
+}
+
+.info-card h3{
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+
+.deadline-items,
+.application-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 15px;
+}
+
+.deadline-item:last-child,
+.application-item:last-child{
+  border-bottom: none;
+}
+
+
+.deadline-item span,
+.application-item span{
+   color: #888;
+   font-size: 14px;
+}
+
+.center-card{
+    text-align: center;
+}
+
+.center-card h1{
+    font-size: 55px;
+    color: black;
+    margin: 15px 0;
+}
+
+.center-card p{
+    color: #777;
+}
+
+                      /* full Calendar */
+.fc{
+    font-family:Arial, halvetica , sans-serif;
+}                      
+
+.fc-toolbar-title{
+    font-size: 24px !important;
+    font-weight: bold;
+}
+
+.fc-button{
+    background: black !important;
+    border: none !important;
+    border-radius: 8px !important;
+}
+
+.fc-button:hover{
+    background: #333 !important;
+}
+
+.fc-daygrid-day-number{
+   color: #333;
+   font-weight: 600;
+}
+
+.fc-col-header-cell{
+    background: #faf7f2;
+}
+
+.fc-daygrid-event{
+    border: none !important;
+    border-radius: 6px;
+    padding: 3px 6px;
+    font-size: 12px;
+}
+
+.fc-scrollgrid{
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+@media(max-width: 1000px){
+    .calendar-container{
+        flex-direction: column;
+        
+    }
+
+    .calendar-right{
+        width: 100%;
+    }
+
+    .navbar{
+        padding: 0 20px;
+    }
+    }
+
+@media(max-width: 768px){
+    .nav-links{
+        display: none;
+    }
+
+    .calendar-header h1{
+        font-size: 38px;
+    }
+
+    .calendar-subtitle{
+        font-size: 16px;
+    }
+}
+
+
+

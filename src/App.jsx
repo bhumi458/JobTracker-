@@ -4,12 +4,13 @@ import FrontPage2 from "./components/frontPage2";
 import Dashboard from "./components/Dashboard";
 import MyApps from "./components/MyApps";
 import Browse from "./components/Browse";
+import Calendar from "./components/Calendar";
  
 
 export default function App() {
   const getPageFromHash = () => {
     const hash = window.location.hash.replace("#", "");
-    return ["login", "signUp" ,"dashboard", "browse" , "apps"].includes(hash)
+    return ["login", "signUp" ,"dashboard", "browse" , "apps" , "calendar"].includes(hash)
     ? hash
     : "login";
   };
@@ -51,6 +52,10 @@ export default function App() {
          
     if(page === "apps"){
     return <MyApps onNavigate={navigate} />;
+  }
+
+  if(page === "calendar"){
+    return <Calendar onNavigate={navigate} />;
   }
 
   return <MyApps onNavigate={navigate} />;

@@ -97,6 +97,8 @@ const MyApps = ({onNavigate}) => {
               My Apps
             </h3>
 
+             <h3 onClick={() => onNavigate("calendar")}>Calendar</h3>
+
           </div>
 
         </div>

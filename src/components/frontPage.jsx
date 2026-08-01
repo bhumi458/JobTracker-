@@ -1,14 +1,28 @@
 import React from 'react'
+import { SiTicktick } from "react-icons/si";
+import { FaBriefcase } from "react-icons/fa";
+import { LuBicepsFlexed } from "react-icons/lu";
 import "../styles/frontPage.css";
 
 const FrontPage = ({ onNavigate }) => {
     //We will use map() to display every feature
 
-    const features = [
-      "Applied to 12 Companies",
-      "3 Interviews this week ",
-      "1 Offer received",
-    ] ;
+     const features = [
+         {
+           icon: <SiTicktick />,
+           text: "Applied to 12 Companies",
+         },
+    
+         {
+           icon: <SiTicktick />,
+          text: "3 Interviews this week",
+         },
+    
+         {
+           icon: <SiTicktick />,
+           text: "1 offer received",
+         },
+        ] ;
 
    const buttons = ["Log In" , "Sign Up"];
 
@@ -23,7 +37,12 @@ const FrontPage = ({ onNavigate }) => {
 
           <div className="left-panel">
           <header>
-            <h2 className="header">JobTracker</h2>
+            <h2 className="header">
+               <span  className="logo-btn">
+                      <FaBriefcase />
+               </span>
+
+              JobTracker</h2>
           </header>
 
             <h1 className="hero-title">Your placement journey , tracked <span className="orange-text">beautifully</span></h1>
@@ -33,16 +52,28 @@ const FrontPage = ({ onNavigate }) => {
             </p>
 
             {/*features list*/}
-            <ul className="feature-list">
+             <ul className="feature-list">
               {features.map((feature , index) => (
                 //key help react identify every list item
-                <li key = {index} className="feature-item">{feature}</li>
+                <li key = {index} className="feature-item">
+                     <span className="feature-icon">
+                         {feature.icon}
+                     </span>
+
+                     <span>
+                      {feature.text}
+                     </span>
+                </li>
               ))}
             </ul>
           
 
           <footer className="footer">
-            <p>Made for campus placement grind</p>
+            <p>Made for campus placement grind
+               <span className="footer-logo">
+                    <LuBicepsFlexed />
+                </span>
+            </p>
           </footer>
            </div>
         

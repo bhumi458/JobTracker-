@@ -84,6 +84,7 @@ const Dashboard = ({onNavigate}) => {
 
                   <h3 onClick={() => onNavigate("browse")}> <BsBrowserSafari />Browse</h3>
                   <h3 onClick={() => onNavigate("apps")}> <FaList />My Apps</h3> 
+                  <h3 onClick={() => onNavigate("calendar")}>Calendar</h3>
 
                </div>
             </div>

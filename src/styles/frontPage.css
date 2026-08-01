@@ -36,7 +36,24 @@
      padding-right: 50px;
 }
 
+.logo-btn{
+    width:38px;
+    height:38px;
+    
+    border-radius:50%;
+
+    background:#201b17;
+    color:white;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    
+}
+
 .header{
+     display: flex;
+    align-items: center;
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 80px;
@@ -59,14 +76,42 @@
     list-style: none;
 }
 
-.feature-item{
+ .feature-item{
     margin-bottom: 20px;
     font-size: 18px;
+    gap: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.feature-icon{
+    color: green;
+    font-size: 20px;
+
 }
 
 .footer{
     margin-top: auto;
     color: #9ca3af;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.fotter p{
+    margin: 0;
+}
+
+.footer-logo{
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: #201b17;
+    color: white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .orange-text{

@@ -65,12 +65,12 @@ const FrontPage2 = ({onNavigate}) => {
           
 
           <footer className="footer">
-            <p>Made for campus placement grind 
-              <span className="logo-btn">
-                <LuBicepsFlexed />
-              </span>
-              </p>
-          </footer>
+             <p>Made for campus placement grind
+              <span className="footer-logo">
+                  <LuBicepsFlexed />
+             </span>
+             </p>
+              </footer>
            </div>
         
 
@@ -175,7 +175,7 @@ const FrontPage2 = ({onNavigate}) => {
             </div>
 
     
-             <button type="submit" className="create-btn">
+             <button type="submit" className="create-btn" onClick={() => onNavigate("login")}>
                   Create Account
              </button>
 
