@@ -200,7 +200,7 @@ body{
     margin-bottom: 18px;
 }
 
-.deadline-items,
+.deadline-item ,
 .application-item{
     display: flex;
     justify-content: space-between;

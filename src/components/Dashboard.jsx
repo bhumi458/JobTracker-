@@ -12,6 +12,7 @@ import { GiPartyPopper } from "react-icons/gi";
 import { RxCross1 } from "react-icons/rx";
 import { GiPaperBagOpen } from "react-icons/gi";
 import { FaArrowAltCircleUp } from "react-icons/fa";
+import { PiGreaterThan } from "react-icons/pi";
 
 const Dashboard = ({onNavigate}) => {
 
@@ -94,6 +95,13 @@ const Dashboard = ({onNavigate}) => {
                 <div className="avatar">
                     E
                 </div>
+
+                <span className="arrow-btn" onclick={() => onNavigate("profile")}>
+                    <PiGreaterThan />
+                </span>
+
+                
+
                 <span>
                     Email Name
                 </span>
@@ -118,8 +126,6 @@ const Dashboard = ({onNavigate}) => {
             </p>
              
         </div>
-
- 
 
        </section>
 

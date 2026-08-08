@@ -94,8 +94,7 @@ const Calendar = ({onNavigate}) => {
     <h1>Job Calendar</h1>
 
     <p className="calendar-subtitle">
-       Track your application deadlines and stay on top of every 
-       online assessment , interview and offer.
+        Track every applications , interview , and offer in ine place.
     </p>
     </section>  
 

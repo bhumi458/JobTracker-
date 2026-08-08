@@ -120,6 +120,14 @@ body{
     align-items:center;
 
     font-weight:bold;
+
+}
+
+.arrow-btn{
+    font-size: 15px;
+    color: black;
+    margin-right: 10px;
+     
 }
 
 .logout-btn{
@@ -159,6 +167,7 @@ body{
     font-size:23px;
     color:#777;
 }
+ 
 
 .cards{
 
